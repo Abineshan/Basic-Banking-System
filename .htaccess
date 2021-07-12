@@ -1,6 +1,6 @@
 RewriteEngine on
 
-RewriteRule ^home/?$ index.php?user=User
+RewriteRule ^home/?$ index.html
 RewriteRule ^customer/?$ users.php
 RewriteRule ^transaction/?$ user.php
 RewriteRule ^history/?$ hist.php
