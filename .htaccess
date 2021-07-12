@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^home/?$ index.php?user=User
+RewriteRule ^customer/?$ users.php
+RewriteRule ^transaction/?$ user.php
+RewriteRule ^history/?$ hist.php
+RewriteRule ^new/?$ signup.php
+RewriteRule ^tran=([0-9]+) tran.php?id=$1
+RewriteRule ^newer/?$ signup.php?error=email_or_password_is_already_exists
+RewriteRule ^newerr/?$ signup.php?error=Mismatch_Password
+RewriteRule ^transaction=Successfull/?$ user.php?error=Transaction_Successfull...
+RewriteRule ^transaction=Failed/?$ user.php?error=Transaction_Failed
